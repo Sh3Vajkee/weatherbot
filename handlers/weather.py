@@ -55,7 +55,7 @@ async def weather_cmd(m: types.Message, state: FSMContext):
     api_url = "https://api.openweathermap.org/data/2.5/weather"
     params = {
         "q": city,
-        "appid": "9ee5c2b908f9fdb008f0a35e229fd488",
+        "appid": "token",
         "units": "metric",
         "lang": "ru"
     }
@@ -124,7 +124,7 @@ async def weather_cmd(m: types.Message, state: FSMContext):
             params_daily = {
                 "lat": lat_coord,
                 "lon": lon_coord,
-                "appid": "9ee5c2b908f9fdb008f0a35e229fd488",
+                "appid": "token",
                 "units": "metric",
                 "lang": "ru"
             }
